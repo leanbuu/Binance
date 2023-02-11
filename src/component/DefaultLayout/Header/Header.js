@@ -1,7 +1,7 @@
 import classNames from "classnames/bind";
 import styles from '../Header/Header.module.scss';
 import { LogoIcon, QuaIcon } from "../../Layouts/components/Icons/Icons";
-import {  CgMenuGridR} from 'react-icons/cg'
+import { CgMenuGridR}  from "react-icons/cg";
 import MenuItem from "../../Layouts/components/MenuItem/MenuItem";
 import {AiFillGift} from 'react-icons/ai'
 import {TbBookDownload} from 'react-icons/tb'
