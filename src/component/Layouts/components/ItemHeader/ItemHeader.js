@@ -13,7 +13,7 @@ function ItemHeader({data, bien}) {
         }else{
            setHien('block')
         }
-    })
+    },[bien])
     let active = bien;
     return ( 
         <div className={`${styles.select} ${data?.id === active ?styles.active:""}`}>
