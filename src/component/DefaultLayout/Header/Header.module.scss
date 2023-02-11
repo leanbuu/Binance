@@ -1,0 +1,123 @@
+.header{
+    background-color: #181A20;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: calc(100% - 32px);
+    margin: 0px !important;
+    padding: 0px 16px;
+    
+}
+.logo{
+    margin: 0 8px;
+    height: 24x;
+    width: 120px;
+    fill: rgb(240, 185, 11);
+}
+.menuheader{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.bocicon{
+    color: rgb(234, 236, 239);
+    :hover{
+        color:rgb(240, 185, 11);
+    }
+}
+.iconbar{
+    display: flex;
+    height: 24px;
+    width: 24px;
+    margin: 0 17px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+.infoheader{
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+    height: 100%;
+    display: flex;
+    float: right;
+    padding: 0 16px;
+    width: auto;
+    color: rgb(234, 236, 239);
+    font-size: 14px;
+    cursor: pointer;
+    :hover{
+        color: #F0B90B;
+    }
+}
+.trang{
+    height: 100%;
+    width: calc(100% - 1310px)
+   
+}
+.login{
+    padding: 6px 10px;
+
+}
+.dangky{
+    padding: 6px 12px;
+    display: flex;
+    position: relative;
+    min-width: 52px;
+    background-color: rgb(252, 213, 53);
+    border-radius: 4px;
+    align-items: center;
+    cursor: pointer;
+}
+.icondangky{
+   height: 16px;
+   width: 16px;
+}
+.titledangky{
+   font-size: 14px;
+   margin-left: 2px;
+}
+.bociconqr{
+    color: rgb(234, 236, 239);
+    height: 22px;
+    width: 22px;
+    margin: 0 8px;
+    padding-left: 12px;
+}
+.iconqr{
+    height: 100%;
+    width: 100%;
+    
+}
+.tool{
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+}
+.language{
+    height: 22px;
+    width: 22px;
+    color: rgb(234, 236, 239);
+}
+.iconlang{
+    height: 100%;
+    width: 100%;
+}
+.cach{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    width: 1px;
+    height: 13px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: #5E6673;
+}
+.coin{
+    color: #EAECEF;
+}
+.light{
+    height: 16px;
+    width: 16px;
+    color: rgb(234, 236, 239);
+}

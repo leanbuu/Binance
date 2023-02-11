@@ -1,0 +1,21 @@
+.select{
+    height: 100%;
+    font-size: 14px;
+    color: #eaecef;
+    font-weight: 500;
+    margin: 0 8px;
+    align-items: center;
+    display: flex;
+    white-space: nowrap;
+    cursor: pointer;
+    :hover {
+        color: #F0B90B;
+    }
+}
+.title{
+    width: auto;
+    overflow: hidden;
+}
+.icon{
+    color: #eaecef;
+}
