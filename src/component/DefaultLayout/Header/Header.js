@@ -6,6 +6,9 @@ import MenuItem from "../../Layouts/components/MenuItem/MenuItem";
 import {AiFillGift} from 'react-icons/ai'
 import {TbBookDownload} from 'react-icons/tb'
 import {MdOutlineLanguage,MdOutlineLightMode} from 'react-icons/md'
+import { Link } from "react-router-dom";
+import Binance from "../../../BinanceContext/Binance";
+import { useContext} from "react";
 
 
 const cx = classNames.bind(styles);
@@ -49,30 +52,38 @@ const HEADER = [
     
  ]
 function Header() {
-    
+    const {doi, handleDoi, handleHome} = useContext(Binance);
     return ( 
         <div className={cx('header')}>
-            <div className={cx('logo')}>
+           <Link onClick={handleHome}  to={'/'}> <div className={cx('logo')}>
                 <LogoIcon />
-            </div>
-            <div className={cx("menuheader")}>
+            </div></Link>
+            <div style={{display : `${doi}` }}>
+            <div  className={cx("menuheader")}>
                 <div className={cx('bocicon')}>
                   <CgMenuGridR className={cx("iconbar")} /> 
                 </div>
                 <MenuItem items={HEADER}/>
             </div>
-            <div className={cx('trang')}></div>
-            <div className={cx("infoheader")}>
-                    <div className={cx('login')}>Đăng nhập</div>
             </div>
-           <div className={cx('dangky')}>
+            <div className={cx('trang')}></div>
+            <div style={{display : `${doi}` }}>
+           <div className={cx("rheader")}>
+            <Link onClick={handleDoi} to='/login'>
+            <div className={cx("infoheader")}>
+                    <div  className={cx('login')}>Đăng nhập</div>
+            </div>
+            </Link>
+            <Link className={cx('link')} to={'/login'}>
+           <div onClick={handleDoi} className={cx('dangky')}>
              <div className={cx('icondangky')}>
                 <AiFillGift />
-             </div>
+             </div> 
              <div className={cx("titledangky")}>
                 Đăng ký
              </div>
            </div>
+           </Link>
            <div className={cx("bociconqr")}>
                 <TbBookDownload className={cx('iconqr')}/>
             </div>
@@ -85,7 +96,9 @@ function Header() {
              <div className={cx("cach")}></div>
              <div className={cx("light")}>
                 <MdOutlineLightMode className={cx('iconlang')}/>
-             </div>
+             </div> 
+           </div>
+           </div>
            </div>
         </div>
         

@@ -52,7 +52,7 @@
 }
 .trang{
     height: 100%;
-    width: calc(100% - 1310px)
+    width: calc(100% - 1308px)
    
 }
 .login{
@@ -60,7 +60,7 @@
 
 }
 .dangky{
-    padding: 6px 12px;
+    padding: 7px 12px;
     display: flex;
     position: relative;
     min-width: 52px;
@@ -68,6 +68,7 @@
     border-radius: 4px;
     align-items: center;
     cursor: pointer;
+    width: auto;
 }
 .icondangky{
    height: 16px;
@@ -113,11 +114,19 @@
     margin-right: 8px;
     background-color: #5E6673;
 }
-.coin{
+.coin { 
     color: #EAECEF;
 }
 .light{
     height: 16px;
     width: 16px;
     color: rgb(234, 236, 239);
+}
+.link{
+    color: rgb(24, 26, 32);
+    text-decoration: none;
+}
+.rheader{
+    display: flex;
+    align-items: center;
 }
